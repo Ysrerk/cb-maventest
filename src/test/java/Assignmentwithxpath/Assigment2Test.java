@@ -11,13 +11,17 @@ public class Assigment2Test {
 	static String text="codingbook";
 	static String url="http://www.google.com";
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		setup();
 		gotogoogle(url);
 		googlepage.typetosearchbox(text);
 		googlepage.clickenter();
 		googlepage.clicksearchresultcodingbook();
+		googlepage.click_test_automation_on_codingbook();
+		googlepage.clickcurriculum();
+		googlepage.clickbasicassignment();
+		googlepage.clickingyoutubelink();
 
 	}
 	public static void setup() {
